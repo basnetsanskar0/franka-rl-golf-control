@@ -2,7 +2,7 @@
 
 This project trains a 7-DOF Franka Emika robotic arm to play a mini-golf game using deep reinforcement learning.
 
-It was developed as part of the ArenaX Labs Machine Learning Hiring Challenge — where the objective is to teach a robot to:
+It was developed as part of the ArenaX Labs Machine Learning Hiring Challenge, where the objective is to teach a robot to:
 - Grasp a golf club
 - Align and swing with precision
 - Hit a ball into a hole
@@ -18,8 +18,8 @@ This repository includes two complete reinforcement learning pipelines, each val
 
 Uses Stable-Baselines3 to quickly train an agent with a custom neural network.
 
-- Quick to prototype and easy to run
-- Leverages a proven PPO implementation
+- Custom neural network feature extractor
+- Leverages a quick and proven PPO implementation
 - Produces a submission-ready `.zip` model
 - Suitable as a baseline for fast experimentation
 
@@ -49,6 +49,7 @@ This approach provides full transparency and control over learning behavior, ide
 ## Results
 
 - Trained robot learns to grasp, swing, and hit accurately
+- Models saved with checkpointing and evaluation metrics
 - Final evaluation:
   - Success rate: approximately 72% over 50 test episodes
   - Average reward: ~68.3
@@ -58,6 +59,14 @@ This approach provides full transparency and control over learning behavior, ide
 
 ---
 
+## Key Features
+
+- Curriculum Learning: Progressive difficulty phases
+- Reward Shaping: Phase-specific rewards for better learning
+- Custom Architecture: Actor-critic with shared features
+- Advanced RL: PPO + GAE for stable training
+
+---
 
 ## Installation
 
@@ -66,3 +75,4 @@ To install all required dependencies:
 ```bash
 pip install -r requirements.txt
 
+---
