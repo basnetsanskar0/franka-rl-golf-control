@@ -1,0 +1,20 @@
+# Core ML dependencies
+torch>=2.0.0
+numpy
+gymnasium>=0.29.1
+matplotlib
+
+# Franka Golf environment
+sai-rl>=0.3.0
+
+# Optional: for GPU support if you're using CUDA
+# torch==2.0.0+cu118  # Uncomment and pin specific CUDA build if needed
+
+# For train_golf_bot.py (Stable-Baselines3 PPO pipeline)
+stable-baselines3[extra]>=2.1.0
+
+# Optional visualization or recording
+imageio
+glfw
+mujoco  # Required by sai-rl backend
+
