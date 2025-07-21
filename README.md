@@ -58,9 +58,11 @@ This approach provides full transparency and control over learning behavior, ide
 
 ---
 
-## How to Run
 
-### Install Dependencies
+## Installation
+
+To install all required dependencies:
 
 ```bash
-pip install sai-rl gymnasium stable-baselines3 torch
+pip install -r requirements.txt
+
